@@ -1,18 +1,15 @@
-import React, {Component} from 'react';
-import {withStyles} from '@material-ui/core/styles';
-import {Input} from "../../Components";
-
-const styles = theme => ({});
+import React, {Component, Fragment} from 'react';
+import {Input, Todo} from "../../Components";
 
 class HomePage extends Component {
     render() {
-        const {classes} = this.props;
         return (
-            <div>
-                <Input label='To do'/>
-            </div>
+            <Fragment>
+                <Input/>
+                <Todo/>
+            </Fragment>
         )
     }
 };
 
-export default withStyles(styles)(HomePage);
+export default HomePage;
